@@ -59,8 +59,7 @@
               <img class="pl-8" src="asstes/Pay-Bill.png" alt="" />
               <h3 class="text-black">Pay Bill</h3>
             </div>
-            <div
-              class="box cursor-pointer border-gray-300 border-2 p-4 text-center rounded-md">
+            <div id="transection-box" class="box cursor-pointer border-gray-300 border-2 p-4 text-center rounded-md">
               <img class="pl-8" src="asstes/Transaction.png" alt="" />
               <h3 class="text-black">Transaction</h3>
             </div>
@@ -73,7 +72,7 @@
                   <div class="card  w-full max-w-sm shrink-0 bg-white ">
                     <form class="card-body">
                         <legend class="text-black ">Select A Bank</legend>
-                        <select class="select select-bordered w-full max-w-xs bg-slate-200">
+                        <select id="allBank" class="select select-bordered w-full max-w-xs bg-slate-200">
                             <option disabled selected>select bank</option>
                             <option value="Bkash" class="text-black">Bkash</option>
                             <option value="Nagad" class="text-black">Nagad</option>
@@ -98,7 +97,7 @@
                             </label>
                             <input  id="pin" value="1234" type="number" placeholder="Enter 4 digit pin number" class="input input-bordered bg-white " required />
                           </div>
-                          <div id="add-money" class="form-control mt-6">
+                          <div id="add-money-btn" class="form-control mt-6">
                             <button id="login-btn" class="btn btn-primary bg-blue-600 text-white rounded-3xl">Add Money</button>
                         </div>
                 </form>
@@ -141,13 +140,22 @@
               </div>
           </section>
 
+          <!-- transection history section  -->
+           <section id="transection-history">
+            <h1 class="text-black font-semibold text-xl">Transaction History</h1>
+            <div id="transection-container">
+
+            </div>
+           </section>
+
         </section>
       </header>
     </section>
-    
+
     <script src="asstes/utilities/toggle.js"></script>
     <script src="asstes/utilities/utilities.js"></script>
     <script src="asstes/js/addMoney.js"></script>
     <script src="asstes/js/cashOut.js"></script>
+    <script src="asstes/js/transectionHistory.js"></script>
   </body>
 </html>
